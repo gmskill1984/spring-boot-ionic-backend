@@ -11,7 +11,7 @@ import com.gabriel.cursomc.domain.Categoria;
 
 
 @RestController
-@RequestMapping(value="/categorias")
+  
 public class CategoriaResource {
 
 	
