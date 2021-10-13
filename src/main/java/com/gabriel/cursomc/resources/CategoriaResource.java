@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.gabriel.cursomc.domain.Categoria;
 import com.gabriel.cursomc.services.CategoriaService;
 
-
+//teste
 @RestController
 @RequestMapping(value="/categorias")
 

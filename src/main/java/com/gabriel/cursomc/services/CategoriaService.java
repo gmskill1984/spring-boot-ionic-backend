@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.gabriel.cursomc.domain.Categoria;
 import com.gabriel.cursomc.repositories.CategoriaRepository;
-
+//
 @Service
 public class CategoriaService {
 	
