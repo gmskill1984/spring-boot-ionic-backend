@@ -3,9 +3,9 @@ package com.gabriel.cursomc.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.gabriel.cursomc.domain.Produto;
+import com.gabriel.cursomc.domain.Cliente;
 //
 @Repository
-public interface ProdutoRepository extends JpaRepository<Produto,Integer> {
+public interface ClienteRepository extends JpaRepository<Cliente,Integer> {
 
 }
