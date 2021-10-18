@@ -22,6 +22,8 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.gabriel.cursomc.domain.enums.TipoCliente;
 
 
+//-----------------------------------------------------------------------------------------------------
+
 @Entity
 public class Cliente implements Serializable {
 
@@ -127,14 +129,7 @@ public class Cliente implements Serializable {
 	public void setPedidos(List<Pedido> pedidos) {
 		this.pedidos = pedidos;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+//----------------------------------------------------------------------------------------
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
