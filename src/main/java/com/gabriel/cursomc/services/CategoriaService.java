@@ -1,14 +1,17 @@
 package com.gabriel.cursomc.services;
 
 import java.util.Optional;
-import com.gabriel.cursomc.services.exception.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
-
+import java.util.List;
 import com.gabriel.cursomc.domain.Categoria;
 import com.gabriel.cursomc.repositories.CategoriaRepository;
+import com.gabriel.cursomc.services.exception.DataIntegrityException;
+import com.gabriel.cursomc.services.exception.ObjectNotFoundException;
+
+
 //
 @Service
 public class CategoriaService {
@@ -47,5 +50,9 @@ public class CategoriaService {
 		catch (DataIntegrityViolationException e) {
 			throw new DataIntegrityException("Não e possivel excluir");
 		}
+	}
+	
+	public List<Categoria> findAll(){
+		return repo.findAll();
 	}
 }
